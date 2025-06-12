@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Editable Contact Table">
+        <lightning-datatable
+            key-field="Id"
+            data={contacts}
+            columns={columns}
+            draft-values={draftValues}
+            onsave={handleSave}
+            hide-checkbox-column
+        ></lightning-datatable>
+    </lightning-card>
+</template>
